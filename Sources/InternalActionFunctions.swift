@@ -70,7 +70,7 @@ extension JTAppleCalendarView {
             if isPagingEnabled {
                 scrollingMode = .stopAtEachCalendarFrame
             } else {
-                scrollingMode = .none
+                scrollingMode = .none(withResistance: 0)
             }
         #endif
     }

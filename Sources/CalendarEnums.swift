@@ -73,7 +73,7 @@ public enum ScrollingMode: Equatable {
     /// nonStopTo - continuous scrolling that will stop at acustom interval
     case nonStopTo(customInterval: CGFloat, withResistance: CGFloat)
     /// none - continuous scrolling that will eventually stop at a point
-    case none
+    case none(withResistance: CGFloat)
     
     func pagingIsEnabled() -> Bool {
         switch self {
