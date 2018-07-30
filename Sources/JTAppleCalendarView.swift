@@ -172,7 +172,7 @@ open class JTAppleCalendarView: UICollectionView {
     var decelerationRateMatchingScrollingMode: CGFloat {
         switch scrollingMode {
         case .stopAtEachCalendarFrame: return UIScrollViewDecelerationRateFast
-        case .stopAtEach, .stopAtEachSection: return UIScrollViewDecelerationRateFast
+        case .stopAtEach, .stopAtEachSection: return UIScrollViewDecelerationRateNormal
         case .nonStopToSection, .nonStopToCell, .nonStopTo, .none: return UIScrollViewDecelerationRateNormal
         }
     }
